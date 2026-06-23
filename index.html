@@ -5,15 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portifólio Arthur Teixeira">
     <meta name="author" content="Arthur Teixeira Silva">
+    <link rel="stylesheet" href="style.css">
     <title>Arthur Teixeira</title>
 </head>
+
+<!--Centralizar o conteúdo verticalmente-->
 <body>
-    <header>
-        <img src="./src/icon_chrona.jpg" alt="icon_chrona" width="151px">
-        <h1>Arthur Teixeira Silva</h1>
-        <p>Estudante de programação | arthur.teixeira@ufpe.br</p>        
+
+    <div>
+
+    <!--cabeçalho, imagem e textos lado a lado-->
+    <header class="display-row">
+        <img src="./src/icon_chrona.jpg" alt="icon_chrona" width="100px">
+        <div>
+            <h1>Arthur Teixeira Silva</h1>
+            <p>Estudante de programação | arthur.teixeira@ufpe.br</p> 
+        </div>               
     </header>
+
+    <!--linha divisória-->
     <div></div>
+
+    <!--links de navegação, um do lado do outro-->
     <nav>
         <a href="">Sobre mim</a>
         <a href="">Educação</a>
@@ -22,7 +35,9 @@
         <a href="">Contato</a>
     </nav>
 
+    <!--conteúdo da página em si-->
     <main>
+        
         <section>
             <div>
                 <h2>
@@ -60,11 +75,13 @@
         <section>
             <h2>Hard-skills</h2>
             <hr>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>Java Script</div>
-            <div>Git/Github</div>
-            <div>SQL</div>
+            <div class="display-row">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>Java Script</div>
+                <div>Git/Github</div>
+                <div>SQL</div>
+            </div>
             <hr>
         </section>
 
@@ -102,9 +119,9 @@
 
         </section>
 
-        <section>
-            <h2>Entre em contato</h2>
+        <section class="display-row">
             <div>
+                <h2>Entre em contato</h2>
                 <p>arthur.teixeira@ufpe.br</p>
                 <p>arthurteixeiragit11-a11y</p>
                 <p>◎ Recife, PE</p>
@@ -112,5 +129,6 @@
             <img src="./src/isaac.gif" alt="isaac_gif" width="500px">
         </section>
     </main>
+</div>
 </body>
 </html>
