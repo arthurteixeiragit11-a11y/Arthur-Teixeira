@@ -10,127 +10,86 @@
     <title>Arthur Teixeira</title>
 </head>
 
-<!--Centralizar o conteúdo verticalmente-->
 <body>
-
     <div>
-
-    <!--cabeçalho, imagem e textos lado a lado-->
-    <header class="display-row">
-        <img src="./src/icon_chrona.jpg" alt="icon_chrona" width="100px">
-        <div class="container-title">
-            <h1 class="font-title">Arthur Teixeira Silva</h1>
-            <p class="font-title">Estudante de programação | arthur.teixeira@ufpe.br</p> 
-        </div>               
-    </header>
-
-    <!--linha divisória-->
-    <div class="container-line"></div>
-
-    <!--links de navegação, um do lado do outro-->
-    <nav>
-        <a class="container-nav" href="#sobre">Sobre mim</a>
-        <a class="container-nav" href="#educacao">Educação</a>
-        <!-- <a class="container-nav" href="">Hard-skills</a> em desenvolvimento...--> 
-        <a class="container-nav" href="#experiencia">Experiencia</a>
-        <a class="container-nav" href="#contato">Contato</a>
-    </nav>
-
-    <!--conteúdo da página em si-->
-    <main>
-        
-        <section id="sobre">
-            <div class="container-section">
-                <h2 class="font-title">
-                    Sobre mim
-                </h2>
-            </div>
-            <p class="font-content">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper felis turpis, nec egestas nisi faucibus et. Cras euismod dapibus libero, eu elementum justo. In tristique vestibulum posuere. Pellentesque ac fermentum purus. Donec urna quam, facilisis non suscipit nec, tempor rhoncus magna. Vivamus fringilla orci augue, at pulvinar turpis posuere a. Proin quis ullamcorper risus. Donec purus arcu, ornare id ultricies sit amet, imperdiet egestas est. Nam dapibus, nisl quis congue sodales, erat risus tincidunt velit, in vulputate velit tortor in est.
-            </p>
-        </section>
-
-        <section id="educacao">
-            <div class="container-section">
-                <h2 class="font-title">Educação</h2>
-            </div>
+        <header class="display-row">
+            <img src="./src/icon_chrona.jpg" alt="icon_chrona" width="100px">
             <div>
-                <h3 class="font-title">Universidade Federal de Pernambuco (UFPE)</h3>
-                <ul class="font-content">
-                    <li>Bacharelado em Gestão da informação</li>
-                    <li>Enfase em analise de dados e descoberta de conhecimento em bases de dados</li>
-                    <li>2024 - Presente</li>
-                </ul>
+                <h1 class="font-title">Arthur Teixeira Silva</h1>
+                <p class="font-title">Estudante de Gestão da Informação | Análise de Dados | arthur.teixeira@ufpe.br</p>
             </div>
+        </header>
 
-            <div>
-                <h3 class="font-title">Softex / Bolsa Futuro Digital</h3>
-                <ul class="font-content">
-                    <li>Formação Front-end</li>
-                    <li>Construção de interfaces interativas</li>
-                    <li>2025 - 2026</li>
-                </ul>
-            </div>
-        </section>
+        <div class="line"></div>
 
-        <!--Ainda em desenvolvimento...-->
-        <!-- <section>
-            <h2 class="font-title">Hard-skills</h2>
-            <hr>
-            <div class="display-row">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Java Script</div>
-                <div>Git/Github</div>
-                <div>SQL</div>
-            </div>
-            <hr>
-        </section> -->
+        <main>
+            <nav>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#edu">Educação</a>
+                <a href="#exp">Experiência</a>
+                <a href="#con">Contatos</a>
+            </nav>
+            <!--Sessão sobre mim-->
+            <section id="sobre">
+                <h2 class="container-section">Sobre mim</h2>
+                <p class="font-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper felis turpis, nec egestas nisi faucibus et. Cras euismod dapibus libero, eu elementum justo. In tristique vestibulum posuere. Pellentesque ac fermentum purus. Donec urna quam, facilisis non suscipit nec, tempor rhoncus magna. Vivamus fringilla orci augue, at pulvinar turpis posuere a. Proin quis ullamcorper risus. Donec purus arcu, ornare id ultricies sit amet, imperdiet egestas est. Nam dapibus, nisl quis congue sodales, erat risus tincidunt velit, in vulputate velit tortor in est.
+                </p>
+            </section>
+            <!--Sessão educação-->
+            <section id="edu">
+                <h2 class="container-section">Educação</h2>
+                <div>
+                    <h3 class="font-title">Universidade Federal de Pernambuco (UFPE)</h3>
+                    <ul class="font-content">
+                        <li >Bacharelado em Gestão da informação</li>
+                        <li>Enfase em analise de dados e descoberta de conhecimento em bases de dados</li>
+                        <li>2024 - Presente</li>
+                    </ul>
+                </div>
 
-        <section id="experiencia">
-            <div class="container-section">
-                <h2 class="font-title">Experiencia</h2>
-            </div>
+                <div>
+                    <h3 class="font-title">Softex / Bolsa Futuro Digital</h3>
+                    <ul class="font-content">
+                        <li>Formação Front-end</li>
+                        <li>Construção de interfaces interativas utilizando HTML, CSS, Java script e React</li>
+                        <li>2025 - 2026</li>
+                    </ul>
+                </div>
+            </section>
 
-            <div>
-                <h3 class="font-title">Aponti</h3>
-                <ul class="font-content">
-                    <li>Atuação como desenvolvedor Front-end no projeto Insight Board</li>
-                    <li>Desenvolvimento e manutenção de interfaces web do projeto Insight Board</li>
-                    <li>Abr.2026 - Jun.2026</li>
-                </ul>
-            </div>
+            <!--Sessão experiências-->
+            <section id="exp">
+                <h2 class="container-section">Experiência</h2>
+                <div>
+                    <h3 class="font-title">Monitoria | UFPE</h3>
+                    <ul class="font-content">
+                        <li>Monitor da disciplina de Banco de Dados</li>
+                        <li>Atuação como suporte técnico e pedagógico para os alunos da disciplina no aprendizado de modelagem de banco de dados e linguagem SQL</li>
+                        <li>Set.2025 - Dez.2025</li>
+                    </ul>
+                </div>
 
-            <div>
-                <h3 class="font-title">Universidade Federal de Pernambuco (UFPE)</h3>
-                <ul class="font-content">
-                    <li>Monitor da disciplina de Banco de Dados</li>
-                    <li>Atuação como suporte técnico e pedagógico para os alunos da disciplina no aprendizado de modelagem de banco de dados e linguagem SQL</li>
-                    <li>Set.2025 - Dez.2025</li>
-                </ul>
-            </div>
+                <div>
+                    <h3 class="font-title">Monitoria | UFPE</h3>
+                    <ul class="font-content">
+                        <li>Monitor da disciplina de Recuperação da informação</li>
+                        <li>Auxílio aos alunos em conceitos de Recuperação da Informação e implementação de soluções em SQL.</li>
+                        <li>Set.2025 - Dez.2025</li>
+                    </ul>
+                </div>
+            </section>
 
-            <div>
-                <h3 class="font-title">Universidade Federal de Pernambuco (UFPE)</h3>
-                <ul class="font-content">
-                    <li>Monitor da disciplina de Recuperação da informação</li>
-                    <li>Atuação como suporte técnico e pedagógico para os alunos da disciplina no aprendizado de modelos de Recuperação da informação e criação de um script de sistema de recuperação da informação em linguagem SQL</li>
-                    <li>Set.2025 - Dez.2025</li>
-                </ul>
-            </div>
-
-        </section>
-
-        <section id="contato" class="display-row">
-            <div class="container-contat">
-                <h2 class="font-contat">Entre em contato</h2>
-                <p class="font-content-contat"> <i class="fa-solid fa-at" style="color: #ffffff;"></i> arthur.teixeira@ufpe.br</p>                  
-                <p class="font-content-contat"> <i class="fa-brands fa-github" style="color: #ffffff;"></i> arthurteixeiragit11-a11y</p>
-                <p class="font-content-contat">◎ Recife, PE</p>
-            </div>
-            <img src="./src/isaac.gif" alt="isaac_gif" width="400px">
-        </section>
-    </main>
-</div>
+            <section id="con" class="display-row">
+                <div>
+                    <h2 class="font-contat">Acompanhe meu trabalho</h2>
+                    <p class="font-contat, contat"> <i class="fa-brands fa-github" style="color: #ffffff;"></i> arthurteixeiragit11-a11y</p>
+                    <p class="font-contat, contat">◎ Recife, PE</p>
+                </div>
+                <img src="./src/isaac.gif" alt="isaac_gif" width="400px">
+            </section>
+        </main>
+    </div>
 </body>
-</html>
+
+

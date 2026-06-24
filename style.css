@@ -5,18 +5,17 @@
     gap: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 60px;
     background-color: #1A0D09;
-    color: white;
+    color: white; /*tirar depois*/
 
+    /****************************
+    Animação ao carregar a página
+    ****************************/
     opacity: 0;
     transform: translateY(12px);
     animation: fadeIn 0.8s ease forwards;
@@ -31,9 +30,10 @@ body{
 
 main{
     max-width: 800px;
+
 }
 
-/*posicionamento para elementos que precisam ficar um do lado do outro*/
+/*para elementos que precisam ficar um do lado do outro*/
 .display-row{
     display: flex;
     flex-direction: row;
@@ -41,19 +41,41 @@ main{
     justify-content: center;
 }
 
-/*design das fontes*/
+/************************
+Estilo das Fontes do site
+************************/
+
 h1.font-title{
     font-family: 'Cormorant infant', sans-serif;
     font-weight: lighter;
     font-size: 64px;
 }
 
-h3.font-title,
+/* h2.font-title{
+    font-family: 'Cormorant infant', sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+} --> essa configuração de fonte está na classe '.container-section'*/ 
+
+h2.font-contat{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 48px;
+    color: #E8B89A;
+    margin-bottom: 30px;
+}
+
+h3.font-title{
+    font-family: 'Cormorant infant', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
 p.font-title{
     font-family: 'Cormorant infant', sans-serif;
     font-weight: lighter;
     font-size: 24px;
-
 }
 
 .font-content{
@@ -62,49 +84,11 @@ p.font-title{
     font-size: 18px;
 }
 
-/*desing do cabeçalho*/
-header img{
-    width: 150px;
-    height: 150px;
-    border: 2px solid #E8B89A;
-    border-radius: 50%;
-    margin-right: 18px;
 
-
-}
-
-h1.font-title{
-    font-family: 'Cormorant infant', sans-serif;
-    font-weight: lighter;
-    font-size: 64px;
-}
-
-h2.font-title{
-    font-family: 'Cormorant infant', sans-serif;
-    font-weight: lighter;
+p.font-contat{
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
     font-size: 32px;
-    display: flex;
-    justify-content: center;
-}
-
-p.font-title{
-    font-family: 'Cormorant infant', sans-serif;
-    font-weight: lighter;
-    font-size: 24px;
-
-}
-
-/*desing da linha*/
-.container-line{
-    margin-top: 34px;
-    margin-bottom: 34px;
-    border: 1px solid #FFFFFF;
-}
-
-/*design do nav*/
-nav{
-    display: flex;
-    gap: 30px;
 }
 
 nav a{
@@ -119,40 +103,62 @@ nav a:hover{
     color: #E8B89A;
 }
 
+/***************
+Estilo do header
+***************/
 
-/*design dos titulos das seções*/
+header img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #E8B89A;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+/************
+estilo do nav
+************/
+
+.line{
+    margin-top: 34px;
+    margin-bottom: 34px;
+    border: 1px solid #FFFFFF;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+/*****************
+estilo das sessões
+****************/
+
 .container-section{
     margin-top: 34px;
     margin-bottom: 26px;
+    text-align: center;
     background-color: #2E1510;
     border: 1px solid #2E1510;
     border-radius: 10px;
     max-width: 20%;
     padding: 3px 8px;
+    font-family: 'Cormorant infant', sans-serif;
+    font-weight: lighter;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
 }
 
-/*desing dos cards*/
 h3 {
     margin-top: 34px;
 }
 
-/*design do entre em contato*/
-h2.font-contat{
-    margin-bottom: 30px;
-    font-family: 'Abril Fatface', sans-serif;
-    font-size: 48px;
-    color: #E8B89A;
+/*********************************
+estilo do 'acompanhe meu trabalho'
+*********************************/
+
+.contat{
+    margin-bottom: 6px;
+    font-size: 24px; 
 }
-
-.container-contat{
-    margin-bottom: 70px;
-}
-
-p.font-content-contat{
-    font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    margin-bottom: 6px;    
-}
-
-
